@@ -16,53 +16,31 @@ h1 {
     text-align: center;
 }
 
-h3 {
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
-    
-    width: 20px;
-    height: 20px;
-    color: #000;
-    float: right;
-    padding-right: 800px;
-    position: relative;
-    top: -500px;
-}
-
-#nerdthing {
+h3, #name, #answers, h5, #nerd-input {
     display: flex;
     align-items: center;
     padding-right: 200px;
     position: relative;
-    top: -475px;
-    font-family: fantasy;
     width: 10px;
     height: 25px;
-    border-radius: 20px;
-    left: 625px;
-}
-
-#hint {
-    display: flex;
-    align-items: center;
-    padding-right: 200px;
-    position: relative;
-    top: -500px;
     font-family: sans-serif;
-    width: 10px;
-    height: 25px;
-    left: 625px;
+}
+
+h3 {
+    top: -480px;
+    left: 680px;
+}
+
+#name {
+    top: -500px;
+    left: 635px;
 }
 
 #answers {
-    color: rgb(10, 10, 10);
-    display: flex;
-    align-items: center;
-    padding-right: 200px;
-    position: relative;
-    top: -550px;
-    font-family: sans-serif;
-    width: 10px;
-    height: 25px;
+    top: -540px;
     left: 775px;
+}
 
+#nerd-input {
+    top: -360px;
 }
