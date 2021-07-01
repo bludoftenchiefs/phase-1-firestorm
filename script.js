@@ -5,7 +5,9 @@ document.addEventListener('DOMContentLoaded', () => {
   // hint event code //
   document.getElementById('name').addEventListener('mouseover', mouseOver);
   document.getElementById('name').addEventListener('mouseout', mouseOut);
-  // The onmouseover event occurs when the mouse pointer is moved onto an element, or onto one of its children. 
+  // The mouseover event occurs when the mouse
+  
+  // is moved onto an element, or onto one of its children. 
   //  The mouseout event is fired when the mouse is used to move the 
   //  cursor so that it is no longer contained within the element or one of its children.
   
@@ -22,9 +24,16 @@ const nerdInput = () => {
   .then (response => response.json())
   
   .then ( (response) => {
-    document.getElementById('nerd-input').innerHTML =response['first-appearance'];
+    const addOn = document.createElement('p')
+    document.getElementById('nerd-input').append(addOn)
+    addOn.innerHTML = 'First-Appearance';
+    document.getElementById('nerd-input').innerHTML +=response['first-appearance'];
+    const anotherAddOn =document.createElement('p')
+    anotherAddOn.innerHTML = 'Publisher'
+    document.getElementById('nerd-input').append(anotherAddOn)
+    document.getElementById('nerd-input').append(response['publisher'])
   })
-}
+  }
 // requests for a resources(the API) return. returns a promise that resolves into a Response object (json)
 //which resolves to actual data
 
